@@ -4,8 +4,6 @@ interface Programmer {
   title : string;
   alias : string;
   stack : string[];
-  
-  messsage: () => string;
 }
 
 class Human implements Programmer {
