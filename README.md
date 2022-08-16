@@ -1,9 +1,10 @@
 ```typescript
 
 interface Programmer {
-  title : string;
-  alias : string;
-  stack : string[];
+  title     : string;
+  alias     : string;
+  stack     : string[];
+  languages : string[];
 }
 
 class Human implements Programmer {
