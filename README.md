@@ -8,18 +8,21 @@ interface Programmer {
 }
 
 class Human implements Programmer {
+  
+  public alias     : string;
+  
   constructor(
     public title     : string, 
-    public alias     : string, 
     public stack     : string[],
     public languages : string[],
   ) 
   { 
     this.title     = title;
-    this.alias     = alias;
     this.stack     = stack;
     this.languages = languages;
   }
+  
+  
   
   main() {
     console.log("Hello, World");
@@ -28,9 +31,11 @@ class Human implements Programmer {
 
 const Programmer = new Programmer();
 
+Programmer.alias = "1x0λ7k/r";
+
 Programmer.title = "Snr. Software Engineer";
 
-Programmer.alias = "1x0λ7k/r";
+
 
 Programmer.stack = [
   "React", "React Native", 
@@ -42,3 +47,4 @@ Programmer.languages = [
   "TypeScript", "Javascript", 
   "lua", "bash", "PHP", "Sql"
 ];
+
