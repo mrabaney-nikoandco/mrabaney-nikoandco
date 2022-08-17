@@ -1,33 +1,33 @@
 ```typescript
 
-interface Programmer {
+interface Programmer 
+{
   title     : string;
-  alias     : string;
   stack     : string[];
   languages : string[];
 }
 
-class Human implements Programmer {
+class Human implements Programmer 
+{
   
-  public alias     : string;
+  public alias       : string;
   
-  constructor(
+  constructor (
     public title     : string, 
     public stack     : string[],
-    public languages : string[],
+    public languages : string[]
   ) 
   { 
     this.title     = title;
     this.stack     = stack;
     this.languages = languages;
   }
-  
-  
-  
-  main() {
-    console.log("Hello, World");
+ 
+  main(): string {
+    return "Hello, World";
   }
-}
+  
+};
 
 const Programmer = new Programmer();
 
@@ -35,16 +35,15 @@ Programmer.alias = "1x0λ7k/r";
 
 Programmer.title = "Snr. Software Engineer";
 
-
-
 Programmer.stack = [
-  "React", "React Native", 
-  "GraphQL", "Node", "Solidity"
+  "Solidity", 
+  "GraphQL", "Node", 
+  "React Native", "React",
 ];
 
 Programmer.languages = [
-  "Go", "C", "C#", "C++",
-  "TypeScript", "Javascript", 
-  "lua", "bash", "PHP", "Sql"
+  "bash", "C", "C#", "C++",
+  "lua", "PHP", "Sql", "Go",
+  "TypeScript", "Javascript"
 ];
 
