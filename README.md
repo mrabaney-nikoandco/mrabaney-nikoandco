@@ -1,4 +1,4 @@
-> " If You want to make an omelette,
+> " If you want to make an omelette,
 >   keep a chicken nearby.
 >   Consider a pan.
 
